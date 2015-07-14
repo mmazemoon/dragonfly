@@ -4,12 +4,17 @@ angular.module('mikadoCity', ['ui.router'])
   '$stateProvider',
   '$urlRouterProvider',
   function($stateProvider, $urlRouterProvider){
-    
+
     $stateProvider
       .state('home', {
         url: '/home',
         templateUrl: '/home.html',
         controller: 'MainCtrl'
+      })
+      .state('posts', {
+        url: '/posts/{id}',
+        templateUrl: '/posts.html',
+        controller: 'PostsCtrl'
       });
 
       $urlRouterProvider.otherwise('home');
@@ -47,5 +52,14 @@ angular.module('mikadoCity', ['ui.router'])
     $scope.incrementUpvotes = function(post){
       post.upvotes += 1;
     };
+  }
+])
+
+.controller('PostsCtrl', [
+  '$scope',
+  '$stateParams',
+  'posts',
+  function($scope, $stateParams, posts){
+
   }
 ]);
