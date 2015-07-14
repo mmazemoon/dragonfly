@@ -66,5 +66,7 @@ angular.module('mikadoCity', ['ui.router'])
   'posts',
   function($scope, $stateParams, posts){
 
+    $scope.post = posts.posts[$stateParams.id];
+
   }
 ]);
