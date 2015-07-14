@@ -1,4 +1,4 @@
-angular.module('mikadoCity', [])
+angular.module('mikadoCity', ['ui.router'])
 
 .factory('posts', [
   function (){
