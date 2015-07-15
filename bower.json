@@ -1,0 +1,21 @@
+{
+  "name": "mikado-city",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mmazemoon/mikado-city",
+  "authors": [
+    "Mark Azemoon <mmazemoon@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5"
+  }
+}
