@@ -69,3 +69,131 @@ ActionController::RoutingError (No route matches [GET] "/app.js"):
   Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (123.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 21:46:26 -0700
+Processing by ApplicationController#angular as HTML
+  Rendered layouts/application.html.erb within layouts/application (890.9ms)
+Completed 200 OK in 925ms (Views: 925.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-14 21:46:28 -0700
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-e6764caa085b2bbaaf74c1afbb77982d52f0e95f15b5e06c8606fa762d42f75c.js?body=1" for ::1 at 2015-07-14 21:46:28 -0700
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2015-07-14 21:46:28 -0700
+
+
+Started GET "/assets/angular/angular.self-5918d434c9cc209ba9ff042e92494418b0d4189738c99bedd51c5bbdefe0f11c.js?body=1" for ::1 at 2015-07-14 21:46:28 -0700
+
+
+Started GET "/assets/application.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for ::1 at 2015-07-14 21:46:28 -0700
+
+
+Started GET "/assets/app.self-b39723a33bb2daaeda75c8f5befa4ec319adcf7c9ce85aee1515ec7f395d3177.js?body=1" for ::1 at 2015-07-14 21:46:28 -0700
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for ::1 at 2015-07-14 21:46:29 -0700
+
+
+Started GET "/assets/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" for ::1 at 2015-07-14 21:46:44 -0700
+
+
+Started GET "/www.google.com" for ::1 at 2015-07-14 21:47:01 -0700
+
+ActionController::RoutingError (No route matches [GET] "/www.google.com"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mmazemoon/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mmazemoon/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mmazemoon/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (30.8ms)
+  Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (138.3ms)
+  Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (45.3ms)
+  Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mmazemoon/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (127.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-14 21:47:06 -0700
+Processing by ApplicationController#angular as HTML
+  Rendered layouts/application.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 57ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-14 21:47:06 -0700
+
+
+Started GET "/assets/angular/angular.self-5918d434c9cc209ba9ff042e92494418b0d4189738c99bedd51c5bbdefe0f11c.js?body=1" for ::1 at 2015-07-14 21:47:06 -0700
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-e6764caa085b2bbaaf74c1afbb77982d52f0e95f15b5e06c8606fa762d42f75c.js?body=1" for ::1 at 2015-07-14 21:47:06 -0700
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2015-07-14 21:47:06 -0700
+
+
+Started GET "/assets/application.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for ::1 at 2015-07-14 21:47:06 -0700
+
+
+Started GET "/assets/app.self-b39723a33bb2daaeda75c8f5befa4ec319adcf7c9ce85aee1515ec7f395d3177.js?body=1" for ::1 at 2015-07-14 21:47:06 -0700
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for ::1 at 2015-07-14 21:47:06 -0700
+
+
+Started GET "/" for ::1 at 2015-07-14 21:47:11 -0700
+Processing by ApplicationController#angular as HTML
+  Rendered layouts/application.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 57ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2015-07-14 21:47:11 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-14 21:47:11 -0700
+
+
+Started GET "/assets/application.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for ::1 at 2015-07-14 21:47:11 -0700
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-e6764caa085b2bbaaf74c1afbb77982d52f0e95f15b5e06c8606fa762d42f75c.js?body=1" for ::1 at 2015-07-14 21:47:11 -0700
+
+
+Started GET "/assets/angular/angular.self-5918d434c9cc209ba9ff042e92494418b0d4189738c99bedd51c5bbdefe0f11c.js?body=1" for ::1 at 2015-07-14 21:47:11 -0700
+
+
+Started GET "/assets/app.self-b39723a33bb2daaeda75c8f5befa4ec319adcf7c9ce85aee1515ec7f395d3177.js?body=1" for ::1 at 2015-07-14 21:47:11 -0700
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.css.map" for ::1 at 2015-07-14 21:47:12 -0700
