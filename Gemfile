@@ -16,6 +16,8 @@ gem 'angular-rails-templates'
 
 gem 'sprockets', '2.12.3'
 
+gem 'responders', '~> 2.0'
+
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password

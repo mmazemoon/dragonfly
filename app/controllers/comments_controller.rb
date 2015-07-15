@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
     @post = Post.find(params[:post_id])
     @comment = @post.comments.find(params[:id])
     @comment.increment!(:upvotes)
-    
+
     respond_with @post, @comment
   end
 
