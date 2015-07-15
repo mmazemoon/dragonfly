@@ -10,14 +10,9 @@ angular.module('mikadoCity')
 
     $scope.addPost = function (){
       if(!$scope.title || $scope.title === "") { return; }
-      $scope.posts.push({
+      posts.create({
         title: $scope.title,
-        upvotes: 0,
-        link: $scope.link,
-        comments: [
-          {author: "Mark", body: "Cool post!", upvotes:0},
-          {author: "Oliver", body: "Great idea, but everything is wrong!", upvotes: 0}
-        ]
+        link: $scope.link
       });
       $scope.title = "";
       $scope.link = "";

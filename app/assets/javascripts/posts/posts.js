@@ -13,11 +13,11 @@ angular.module('mikadoCity')
       });
     };
 
-    resolve: {
-      postPromise: ['posts', function (posts){
-        return posts.getAll();
-      }]
-    }
+    o.create = function(post){
+      return $http.post('/posts.json', post).success(function(data){
+        o.posts.push(data);
+      });
+    };
 
     return o;
   }
