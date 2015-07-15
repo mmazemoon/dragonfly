@@ -21,15 +21,6 @@ angular.module('mikadoCity', ['ui.router', 'templates'])
   }
 ])
 
-.factory('posts', [
-  function (){
-    var o = {
-      posts: []
-    };
-    return o;
-  }
-])
-
 .controller('MainCtrl', [
   '$scope',
   'posts',
