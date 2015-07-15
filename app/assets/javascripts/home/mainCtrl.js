@@ -27,4 +27,4 @@ angular.module('mikadoCity')
       post.upvotes += 1;
     };
   }
-]);
+])
