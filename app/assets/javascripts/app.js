@@ -1,4 +1,4 @@
-angular.module('mikadoCity', ['ui.router'])
+angular.module('mikadoCity', ['ui.router', 'templates'])
 
 .config([
   '$stateProvider',
