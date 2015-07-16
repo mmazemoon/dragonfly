@@ -18,7 +18,9 @@ gem 'sprockets', '2.12.3'
 
 gem 'responders', '~> 2.0'
 
-gem 'angular_rails_csrf' 
+gem 'angular_rails_csrf'
+
+gem 'devise', '~> 3.4.0'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
