@@ -9,7 +9,7 @@ angular.module('mikadoCity', ['ui.router', 'templates'])
       .state('home', {
 
         url: '/home',
-        
+
         templateUrl: 'home/_home.html',
         controller: 'MainCtrl',
         resolve: {
@@ -23,7 +23,12 @@ angular.module('mikadoCity', ['ui.router', 'templates'])
         url: '/posts/{id}',
 
         templateUrl: 'posts/_posts.html',
-        controller: 'PostsCtrl'
+        controller: 'PostsCtrl',
+        resolve: {
+          post: ['$stateParams', 'posts', function($stateParams, posts){
+            return posts.get($stateParams.id);
+          }]
+        }
       });
 
       $urlRouterProvider.otherwise('home');
