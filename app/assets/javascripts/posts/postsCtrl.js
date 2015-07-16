@@ -1,4 +1,5 @@
 angular.module("mikadoCity")
+
 .controller('PostsCtrl', [
   '$scope',
   '$stateParams',
