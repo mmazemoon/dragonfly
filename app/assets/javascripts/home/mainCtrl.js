@@ -5,7 +5,6 @@ angular.module('mikadoCity')
   function($scope, posts){
 
     $scope.test = "Hello world!";
-
     $scope.posts = posts.posts;
 
     $scope.addPost = function (){
