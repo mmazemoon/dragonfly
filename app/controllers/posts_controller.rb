@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+  before_filter :authenticate_user!, only: [:create, :upvote]
+
   def create
     @post = Post.new(post_params)
     if @post.save
