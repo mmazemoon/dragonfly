@@ -4,12 +4,9 @@ class CommentsController < ApplicationController
 
   def create
     @post = Post.find(params[:post_id])
-    @comment = @post.comments.create(comment_params)
-    if @comment.save
-      respond_with @post, @comment
-    else
-      respond_with @comment.errors.full_messages, status: :unprocessable_entity
-    end
+    @comment = @post.comments.create(comment_params.merge(user_id: current_user.id))
+
+    respond_with @post, @comment
   end
 
   def upvote
