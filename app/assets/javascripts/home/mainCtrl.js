@@ -3,7 +3,7 @@ angular.module('mikadoCity')
   '$scope',
   'posts',
   function($scope, posts){
-
+    
     $scope.posts = posts.posts;
 
     $scope.addPost = function (){
