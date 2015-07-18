@@ -3,12 +3,9 @@ class PostsController < ApplicationController
   before_filter :authenticate_user!, only: [:create, :upvote]
 
   def create
-    @post = Post.new(post_params)
-    if @post.save
-      respond_with @post
-    else
-      respond_with @post.errors.full_messages, status: :unprocessable_entity
-    end
+    @post = Post.create(post_params.merge(user_id: current_user.id))
+
+    respond_with @post
   end
 
   def index
