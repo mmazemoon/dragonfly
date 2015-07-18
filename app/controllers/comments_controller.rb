@@ -1,5 +1,7 @@
 class CommentsController < ApplicationController
 
+  before_filer :authenticate_user!, only: [:create, :upvote]
+
   def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(comment_params)
@@ -17,8 +19,6 @@ class CommentsController < ApplicationController
 
     respond_with @post, @comment
   end
-
-
 
   private
 
