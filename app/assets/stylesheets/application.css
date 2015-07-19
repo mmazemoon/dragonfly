@@ -10,7 +10,29 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require bootstrap/dist/css/bootstrap
+ *= require bootstrap-css-only/css/bootstrap
  *= require_tree .
  *= require_self
  */
+
+ body {
+     padding-top: 72px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+ }
+
+ .navbar-fixed-top .nav {
+     padding: 15px 0;
+ }
+
+ .navbar-fixed-top .navbar-brand {
+     padding: 0 15px;
+ }
+
+ @media(min-width:768px) {
+     body {
+         padding-top: 102px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+     }
+
+     .navbar-fixed-top .navbar-brand {
+         padding: 15px 0;
+     }
+ }

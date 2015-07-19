@@ -1,4 +1,4 @@
-angular.module('mikadoCity', ['ui.router', 'templates', 'Devise'])
+angular.module('mikadoCity', ['ui.bootstrap', 'ui.router', 'templates', 'Devise' ])
 
 .config([
   '$stateProvider',
