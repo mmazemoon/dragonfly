@@ -13,10 +13,10 @@
         {{post.title}}
       </span>
     </span>
-      posted by <a ng-href="#/users/{{post.user.username}}">{{post.user.username}}</a>
-    <span>
-      <a href="#/posts/{{post.id}}">Comments</a>
-    </span>
+    <div style="text-indent: 50px;">
+      Posted by: <a ng-href="#/users/{{post.user.username}}">{{post.user.username}}</a>
+      |&nbsp;<a href="#/posts/{{post.id}}">Comments</a>
+    </div>
   </div>
 
   <form ng-submit="addPost()" style="margin-top:30px;">
